@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的小站</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ 背景光晕光球 ============ -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ============ 顶部导航（毛玻璃） ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">我的小站</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">关于我</a>
+        <a href="#timeline">时间线</a>
+        <a href="#essays">随笔</a>
+        <a href="#gallery">相册</a>
+        <a href="#reading">阅读</a>
+        <a href="#travels">足迹</a>
+        <a href="#favorites">收藏</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 首屏 Hero ============ -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-badge">🌱 欢迎来到我的小站</div>
+      <h1 class="hero-name" id="heroName">董嘉俊</h1>
+      <p class="hero-tagline" id="heroTagline"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 关于我 ============ -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">关于我</h2>
+        <div id="about-content" class="about-content"></div>
+      </div>
+    </section>
+
+    <!-- ============ 人生时间线 ============ -->
+    <section id="timeline" class="section alt">
+      <div class="section-inner">
+        <h2 class="section-title">人生时间线</h2>
+        <div id="timeline-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ============ 随笔 ============ -->
+    <section id="essays" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">随笔 · 想法</h2>
+        <div id="essay-list" class="essays"></div>
+      </div>
+    </section>
+
+    <!-- ============ 相册 ============ -->
+    <section id="gallery" class="section alt">
+      <div class="section-inner">
+        <h2 class="section-title">相册</h2>
+        <div id="gallery-grid" class="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ============ 阅读 / 影单 ============ -->
+    <section id="reading" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">阅读 · 影单</h2>
+        <div id="reading-list" class="reading"></div>
+      </div>
+    </section>
+
+    <!-- ============ 足迹 / 旅行 ============ -->
+    <section id="travels" class="section alt">
+      <div class="section-inner">
+        <h2 class="section-title">足迹 · 旅行</h2>
+        <div id="travels-list" class="travels"></div>
+      </div>
+    </section>
+
+    <!-- ============ 收藏夹 ============ -->
+    <section id="favorites" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">收藏夹</h2>
+        <div id="favorites-list" class="favorites"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <p>用 ❤️ 记录人生 · 持续更新中</p>
+  </footer>
+
+  <!-- 先加载数据，再加载渲染脚本 -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
